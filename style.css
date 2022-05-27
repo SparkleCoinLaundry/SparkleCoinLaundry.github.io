@@ -292,13 +292,29 @@ ul.nav-items {
 .service-bubble li{
 	display: inline-block;
 	background-color: rgba(256,256,256,0.75); /* var(--light-color);*/
-	margin-right: 30px;
-	margin-left: 30px;
-	border-radius: 50%;
+	margin-right: 25px;
+	margin-left: 25px;
+	
+	border-radius: 100%;
 	
 	-webkit-transition:all .2s linear;
 	-o-transition:all .2s linear;
 	transition:all .2s linear
+}
+
+@media(max-width: 700px){
+	.service-bubble li{
+	display: inline-block;
+	background-color: rgba(256,256,256,0.75); /* var(--light-color);*/
+	margin-right: 25px;
+	margin-left: 25px;
+	
+	border-radius: 100px;
+	
+	-webkit-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear
+}
 }
 
 .service-bubble a{
@@ -306,13 +322,29 @@ ul.nav-items {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	height: 250px;
-	width: 250px;
+	height: 240px;
+	width: 240px;
 	
 	-webkit-transition:all .2s linear;
 	-o-transition:all .2s linear;
 	transition:all .2s linear
 	
+}
+
+
+@media(max-width: 700px){
+	.service-bubble a{
+		color: #000;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		height: 240px;
+		width: 240px;
+		
+		-webkit-transition:all .2s linear;
+		-o-transition:all .2s linear;
+		transition:all .2s linear	
+	}
 }
 
 .service-bubble a img{
