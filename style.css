@@ -24,8 +24,9 @@ body{
 	background-size: cover;
 	
 	height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
+	margin: 0;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
 }
 
 
