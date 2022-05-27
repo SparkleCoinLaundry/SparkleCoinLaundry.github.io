@@ -127,6 +127,66 @@ ul.nav-items {
 	background: #ECEEEF;
 }
 
+.values{
+	position: relative;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	/* centers content */
+	padding-left: 0;
+}
+
+.values-bubble ul{
+	list-style: none;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 0;
+	
+}
+
+.values-bubble li{
+	display: inline-block;
+	background-color: #fff;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 25px;
+	
+	-webkit-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear
+}
+
+.values-bubble a{
+	color: #5E5F60;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 100px;
+	width: 300px;
+	
+	-webkit-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear
+	
+}
+
+.amenities-bubble li{
+	background-color: #fff;
+	opacity: 0.8;
+}
+
+.values h5{
+	margin-top: 20px;
+}
+
+.values p{
+	text-align: center;
+	margin: 20px;
+	margin-top: 10px;
+}
+
 /* === BEGIN Amenities bubbles ================================================================================== */
 .amenities-section{
 	width: 100%;
@@ -197,7 +257,6 @@ ul.nav-items {
 	background-color: #fff;
 	opacity: 0.8;
 }
-
 
 .amenities-bubble li.one{
 	background-color: #7AC2E1;
