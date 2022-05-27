@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sparkle Coin Laundromat</title>
+		<link rel="stylesheet" href="style.css">
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- FontAwesome -->
+		<script src="https://kit.fontawesome.com/304285842d.js" crossorigin="anonymous"></script>
+	</head>
+	
+	<body>
+		
+		<!--
+		<div class="navigation-logo">
+			
+		</div>
+		-->
+		
+		<!-- == Header Navigation Bar ============================================================ -->
+		<div class="navigation-bar">
+				<div class="row mt-auto" style="width: 90%">
+					<div class="col d-flex justify-content-start align-items-end" >
+						<img width="25px" height="25px" style="margin-bottom: 15px; margin-right: 5px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAACnElEQVRoge3aTahNaxzH8c/ZHERSXjK73sJAx0uZmOjeuhN5GZGZ5BowEVImipD5vRnpXnXdUhIpAwMZyAAJUW534CLdS3IiE+XgbIOnXaejYz97rWevZx+tb/1ne639+6717Gf/1/Msampqamq+PwbwF17jFfbnjdM9+nAYH9EcVZsz5uoKfTjta9FWPcfUbOm6wBFjy7bqaLZ0idmAYe2F32NBpozJ6MdT7WVbdSFPzHRsFS/bqp+zJE3EOZ0LPxJGxrjkic6Fm9ibI2wKPigm/BZzMuQtTVHhJk5lyFua54oLf8by6iOPTSPiM/+UPP+WEscnJ0b4esnveFPy+MpZqfiQHsSs6iOX555iwrtyhE3BTp3L3sWEHGFT0K+zBmQYa7IkTcgO8cLnM2VMSgO3xAnvyZSxLTF/Sy2GsVtoJtrRU81GWY5pf4eHsDZXwNRMFDe0B7EwU8bkLMY77aXvY1qmjMnZKPye20lfxeRMGZMTs5LZxFmdTZA9S0P4z42R/i1TxuRMwjVx0id9J3d6Bh6KH97jdoFvJD/gmTjpK+Jm79k4gBNYkT5yeRbhf3HSD4y9S9HANmF3cuQDyRnM7V78YizBS3HSg/hp1PGrfbuxeYuDwtzRMwwI+8Yx0kP4HfuEbZqYPaymsNjfUzscS/GfuPBl6rIeamHn41/dl/6AXzG9Gq1vMw9/6750U1hD74k3EWbihmqkm8J8kJ0p4tvQsvWyIqe2NIQHjtiZuGi9rkoolk3inqeL1p/VqcSzGLellx3Csgo9OqIfx/FJOuFDlRoUZBVuKi/7h/A+2bigge2KvWIxLNzZcSM7kn78gjviZB9jXezJe/2KDGA9fhR68xnCBXkhbNZdxCVhDqipqampqanpcb4AcAJ/uLnFzjMAAAAASUVORK5CYII="/>
+						
+						<p style="float: left; margin-right: 10px">(830) 872-6306</p>
+						
+						<ul class="social-icons">
+						  <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						  <li><a class="instagram" href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+						
+					</div>
+					
+					<div class="col d-flex justify-content-center align-items-center">
+						<img src="logo.png" style="width:250px; top: 50%; margin-bottom: 5px">
+					</div>
+					
+					<div class="col d-flex justify-content-end align-items-end" style="padding-bottom: 25px">
+						<div class="navigation-bar-items">
+							  <a href="">Home</a>
+							  <a href="">Hours</a>
+							  <a href="">Services</a>
+							  <a href="">About</a>
+						</div>
+					</div>
+					
+				</div>
+			
+		</div>
+		
+		
+		<!-- Under Construction Tab -->
+		<div class="construction-tab">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAB/0lEQVRoge2XMS9EQRSFv7VERUFjEX6CRCtRkEiEgl6lFZW1Gir+gUahREj8BRpEohIJhUK3q1EtEhKs4k124+XOPPvMrNnNnGTyJm/uOfeeN5l5MxAQEBAAzAInwAvwrPozzZZ3C6ho2uZfK21U3llFfAPyQE61VfWugpuZsZ73VJHywlhBjZ2kr7dxeZ8VqU8Y61Nj5fpqdJu3TSP4qZ4ZYSwbi7GJ1Hl1Rq7Uc0EYW4jF2IT1vFPUFl0B6FdtDXgHvlSMbTjJu4F+G1y3UbXtvPNAyUD2vZWAuYzq5Or7aN6hBDVnceQxf4k7oEPgrTri3Wp41folIzmi/dokPCmIDjjkTQi8niQjewmiR4IowKEj3oGGt2MyMka0zelEX4FhQXTcEa9MNGNxjAIfOiNZ4NogWiHa0+NoB24c8VYEXga4jMX9MLKcIHoPdArCBUc83QJfFGKrnV7gKUF4WhAdpHbYs82TFng38GgyspsgeiyIQrSAXfD2NbxtTXy182kQfQWGBNHJhGLS8spEZ6w4Rvi5wKstAxQ1pGZCMQs8EG2BXf9cTFqUgKX/LsIapJtYRXhnineJX9eiuyE2HYIR3xCM+IZgxDcEI76hPSXP9Me1gbpPEC0zI8GIbwhGfEPaXavR95JEtMyMBCO+oaWNXGhiz1wWooGulvP4i29MaKSK44uqUQAAAABJRU5ErkJggg=="/>
+			<b>This site is still under construction.</b>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAB/0lEQVRoge2XMS9EQRSFv7VERUFjEX6CRCtRkEiEgl6lFZW1Gir+gUahREj8BRpEohIJhUK3q1EtEhKs4k124+XOPPvMrNnNnGTyJm/uOfeeN5l5MxAQEBAAzAInwAvwrPozzZZ3C6ho2uZfK21U3llFfAPyQE61VfWugpuZsZ73VJHywlhBjZ2kr7dxeZ8VqU8Y61Nj5fpqdJu3TSP4qZ4ZYSwbi7GJ1Hl1Rq7Uc0EYW4jF2IT1vFPUFl0B6FdtDXgHvlSMbTjJu4F+G1y3UbXtvPNAyUD2vZWAuYzq5Or7aN6hBDVnceQxf4k7oEPgrTri3Wp41folIzmi/dokPCmIDjjkTQi8niQjewmiR4IowKEj3oGGt2MyMka0zelEX4FhQXTcEa9MNGNxjAIfOiNZ4NogWiHa0+NoB24c8VYEXga4jMX9MLKcIHoPdArCBUc83QJfFGKrnV7gKUF4WhAdpHbYs82TFng38GgyspsgeiyIQrSAXfD2NbxtTXy182kQfQWGBNHJhGLS8spEZ6w4Rvi5wKstAxQ1pGZCMQs8EG2BXf9cTFqUgKX/LsIapJtYRXhnineJX9eiuyE2HYIR3xCM+IZgxDcEI76hPSXP9Me1gbpPEC0zI8GIbwhGfEPaXavR95JEtMyMBCO+oaWNXGhiz1wWooGulvP4i29MaKSK44uqUQAAAABJRU5ErkJggg=="/>
+		</div>
+		
+				
+		<!-- == Body == -->
+		<div>
+			<h1 style="text-align:center; color: #fff; padding-top: 50px">Services</h1>
+			<hr style="width: 12%; border-width: 3px; background-color: #fff">
+			<h5 style="text-align:center; color: #fff">Tap Bubbles for more Information</h1>
+			
+			<div class="services">
+				<ul class="service-bubble">
+					<li>
+						<a href="">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACRUlEQVRoge3aPWsUURTG8Z8iIVi4WinBGOxEEDQxIOQDWAW1E7T1U4gvCGq0sPQDiKJgYSEq2GthGivFKgpJxBSaIEEjwlrMDWTDvtyZu7M7yPzhNHf3nOc83LtzZ+4sNTUDZwR3sIzmkGMJc6Gn3MxVwMD2uF3ESBVmYnssd2p2RxcjzXy+B0bbnncOuouyGJaRFziIcbyKGE+izLV+cIvOeMT41mjLf7O0ulHmjLzUuoR6jfeckfqqVTVqI1VjVwk11/AYr/Ee38L4fhzHaZxHowTttuS9Em3gKvZE1G7gesjJq1OqkQWcKKAxic9VMbKAiSICgcP4kkMvNzFF/2A6wcQmk+KXWW5iil5Lar+VG5GauelVcA1703pvoYHVCN22pOwjT4Jwv1jD06LJKUY+4Qrm8QPreINLGO2SNxq+8zbkfMc7XMbHhH46kvf6vjVWZCcwk9gdYiqMrSTW7ruRv3iIWYzhAC7KZqhX7jwuhJyxUONRqDlwIzNdcqdxX7ZU1kN8CGMnu+TNDMPI0SJFe3AsQrctKT/2Iwm5fa+ZYuRMQm4nzpVQM2pDjLnTjaWBnxG6uYm5FN5N672Fe5GauYkpuiHbH1KZlt2ADs1IU3awfCjBxAS+5tDLTWzhJhZxqoDGlAo9WG3GL9wUd0e8T/au43cBnbaUcUC3imd4LtvNF8P4uGwTncVZxR8B2vZcnzRWjdpI1aiNVI1uRjq+Ch4iS50+6GbkQQmNpFKopxHZ7rsk/+7b71jELQX/wlFTk8A/Nyhcw3QDa7gAAAAASUVORK5CYII="/>
+							<i>Self-Service</i>
+						</a>
+					</li>
+					
+					<li>
+						<a href="">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACR0lEQVRoge2ZPUvkQBjHfx4iqI0WFoqf4CzsFBWPBQs/wVZy3+C+g3uiKFa2d6VgY2Oj3YGCr5ULwlW3xep1x6Eovq16eEVGiDGZzDPJbBLZHzxks5Nn5v/fSZ4ZstCiuHQBc0ANaKjjV6AzS1FSuoBD4DkkDiiQmTnCTbxEJTtpMmrojfzKTpqMBnoj99lJ8/hgeN3vmPazpEKSYmpkLWF7bujEq05ht9U+Bapa4Imt4D3YDXWcpWAmWuSVKeAEuAOOgBnMC0Zu+AT84+3DfoxnsDDsoF8Ut4ChzNQJuEJv5Bl4Ar4D/RlpNMIveBz4CGwSby64lZlX/Q2HtDdl8+kfcMz3/TTwM0J4WFyrvO6Idudm/IM9ACtAr2prBz4Dq0BdY+IRWFA5I5rrnJoJG/Av8MWyv62IPp2b0Q1qSgfeTMSZcGrGxsiKoWBdLJmIc70qD6fQx2gKfbzCZkZKMXkmUcqDEYBtdc0foGwgvAycq8/baZtIQglYB/rUeZwRgEFgA8FstKUkVkLcDFppak9JQBY/yCukRtIQ7MS0pPyeuhCQFhIj3yz63yd5+d01GUhiZBlYFFwPsu2Lyz4iO5butaoRebqoSkQ168VB3XVOVkYm8KqXPyZjcrQ0y0iw4oWV4OB3oiopWUeSEPx19yxytLybZ8QGm6rVE5Gni560hQexMQJwEZEbFhdSUc18byu5VcS3VcuIBe/GiGRdEO+0bYzcBs5vDPNyNyM/Ys6jcGrEhgG8N4WX6mj6F4JkLXG+hrRwzX8ZK217eBx5igAAAABJRU5ErkJggg=="/>
+							<i>Wash, Dry &amp Fold / Drop-Off</i>
+						</a>
+					</li>
+					
+					<li>
+						<a href="">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABzUlEQVRoge2XPy9DURiHnyJIVCWNAZEQMZlNvkFHqh/Cn9hsKjHZJRK6SXwGi434s2AxIAzaRdAOIiSCGvpKq7k9vffc2/a0zpOcqe95f+e59557bsFisVgsFovFYnFBGEgBOSBfh5EDtoGeoEVSdRIoH5tBi2QbJPIYpERImjaKUFCN2oJq1GisiGmYIqJ6KTwAu8C4nya1Hl7W8ALEWkEkD7wDU60gkgcyQH8riOSBPRzOINNE9oERpysODANPUrdsukgliV9iwBfwQdl+MU3EDetSm6ZkvzSjSAdwKPU7zSwChUfwDfgGJk052XW4BzYovL3mwLw7MuZBZkLm3JoocuBBpl3mfJryx8r3Gpp5j/zBipiGFTGNfymSAWaBiIwZ4LoGa9LOcXNwpYGow9yoBAd1IPrJcbWQuOJCJDQlnh1EdHMyAKsuQnsVARFNkS0HEd2cJBS+V5Ko74wqoM+jQFYkwh5FnHIywIo4KDmWCdOKmrjUHFVrpuCu1jmLMvmKypvwRmrmdQKEtVrndAIXFG9jguJrMV7S/FxqdQmX9FLlnPnJGaIo4zTOgUHd5iWMApdVcgb8hnRReMxOgVcZJ8CC/BYU3cCSTs4PoLXJh7t3aNMAAAAASUVORK5CYII="/>
+							<i>Wash, Dry &amp Fold / Pick Up &amp Delivery</i>
+						</a>
+					</li>
+					
+					<li>
+						<a href="">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABTUlEQVRoge2XwWrCQBCGf0vIyYJFe/EQ2pP4CD3Wd9HH6rFv4UvoVaHQ9qL2UHprCvGQCU6HTTAxyY5hPgg//LtZ5mfYIQEMwzCuiZ7DS1qvohr/ar/xVUXdWBBtdDbI0EsV5UkADLghg0zaq+UiegCm3MgL8kKb+cMP8bn2KmotDLKFXjakhUEeSTUHyWp74KYMEpG+N15Odd5II27KIGPSr8bLqc6BdMxNGSQbafvGy6nOjvSuaFOMdEaHjrUE+R+Uba6F5MfclB35IR3lHK6Be9JvbsogK9Jn4cu57nNtRrpGAQukbfugF/oAngAscWr1krxbD2szAJ/kz/OSA0AA4NfhayO7x3+ZYX+I2rAg2rAg2ghK7L10JLum4TlnnjVFO9MRC6INC6INC6INC6INC6KNMt9aqv8cO9MRC6KNMnekCWq7d53piKGNI1ejQaFhM34WAAAAAElFTkSuQmCC"/>
+							<i>Commercial</i>
+						</a>
+					</li>
 
+				</ul>
+			</div>
+		</div>
+		
+		<div class="amenities-section">
+			<h3 style="text-align:center; color: #5E5F60; padding-top: 25px">Amenities</h3>
+			<hr style="width: 12%; border-width: 3px; background-color: #5E5F60">
+			
+			<div class="amenities">
+			
+				<ul class="amenities-bubble">
+					<div class="row">
+					
+						<div class="col">
+							<li class="one">
+								<a>
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAACdUlEQVR4nO3cu27UQBSH8S8RmwYQtJFSwQsg4CGggU3eBwEV1xcBURBeg8sDAGkCogeWBqSEwg6IiB2PveOdmd3vJ50ikuU9Z/6KN77EIEmSJEmSJEmSJEmSJElKaaPn9lvAtK2rwA5wNnVTlfkBfAbeAS/b+rmMD94DDoBjK1gfgd2BaxxlE3hcwKC11aN27ZJ7UsBwtdbDAesdtFfAULXXtPeqz7FFczzMPVDtddCuZZTQMW4KXI7dkea6BNyK3TgUyKh/KayZ6MNWKJBrCRpR43rshqETw+/AucV7ETADzsdsGArkOE0vakVdFRnlxEXDGUhhDKQwqxLIM+AKMKE5VodqG3iRp83F5D7Dja17A2bbztDnwnIv9FhhlDLfJ+BmTQ2PGUYp8x3W1vC8uttnkETGmiV7AzWGQc8e1yaQXGHQ0ddaBvK0T/MjWEogNV3Lugh8Tbi/UubbmPvDKaU0fKLvI0tdSpnvn7nOjP0B6mdVLp2sDAMpjIEUZozvkLG+LNfiu6mm35ALuRtYhpoCuZN4f133TU5XdrnPzP9XyZ+V7cFLJ3MqVygGEqgcoRhIR3mDqsCq+RbuIXCjpoZj636foVo+5DByPefvY0BdTh4DKjKQmi6/185ne2tkIIUxkMKEApktrYvV9y12w1AgXxI0okb0WoYCeZOgETVex24YCmQ/QSNqvEqxkwnwgfwnfbVXrxcHdNktYKCa64geLw2I5ZuAhteDAevdaZPmVUO5h6upjmju2Yx6njfF75SYeg/cHrjGvW/eT9oPm9K8emMH3/Ywo/n3tLc0f5nuA7+ydiRJkiRJkiRJkiRJkiRJ+uM3pNHSJ/u4MU0AAAAASUVORK5CYII="/>	
+								</a>
+							</li>
+							<p><i>Charging Ports</i></p>
+							
+						</div>
+							
+							
+						<div class="col">
+							<li class="two">
+								<a>
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADF0lEQVRoge3YSYhUVxTG8Z9DNMapEyU44IhDAuo+C1EXcdgouJHQUcQhKzeSoKCbZJdFNg4bcRfIInaigiMiigOYkNAmGBRsQYUWo4FOiBKNbbdZ3CtdlvWqXlW9skry/nA275177neq7r3nvEtOTk5OThMYlFGM9/EB5mAWZmNMtFHR7yH+jtYV7Tp+wDU8y0BL1YzFehzE/SiiHruP77FOSL7hLMV3eJSB+CT7Bx34MGvxQ9GOyw0Un2Sd+AhD6k1iCX5tQgLFdg3La0lgorBmm51AsXVEbalYhrstIDrJ/sDKcgkMxR70t4DYStaP3VEzBurIaBxQ4zqMgX/DOVwRasRt/CXUD0I9acM0oc7MxyLMw+Aa5z2BNXhAWHOdqv9V+nAWmzGuRiEwHp/EWH016OiMOThU5cBH2Ie5dYhPYi7243GVmg7Du7iacsARTG9AAsVMxtfS7dcuBSfZFNws43wLiytM/g5W4SscjxP04Em0HqG3Oh59VuHtCjGXCHstSdfNqP0FZqK7hPO3wiYtxTB8jJPoLTNhkvXGxNpjrFK0CfWjeGx31FyS9/B7gfPnSnfIw/Ep7tQgPsm6sTUhoUH4osD3XtRalgXRcWPC+xXCsskqgWK7LrkMbIjaFlRK4jmjSzwbgb1eTcHsF4rzmym1pWYcLr6CBIrtR+FUzYQZGruUKtmNqKEsaVqDOZiawq9RTIkaMmG1dMfrU1zANiwUeqqR0WbHZ9ujz9MU8Xrj3JnSLrkXeoxdmFBFvIlCB/tvQsy+OGdD2OTlU+uE+pbeNKGgFp9am+pSmoItBZN9KYPvaaHgbTfwj3+WQcxUbMPahHdtQjE9KJx2D6N1xWcbJbc8a2PspjIcO/Gnypu4BzvimJZiEi6pvkb8LOyRlmCS0l1zWuuOMeqi1m/lQu7iWB3jTwsdd0swGN+o/t/oUHAT0ioMEW5i0iZxGG80RWkKhuGoykmcUrpFbylG4IzkJC4KvddrwVs47+UkLqnzw6gZjMVPBpL4ReVbk5alTbgJvCLcKL7WTFBde5+Tk5PzP+A/tEGt6GSKMKcAAAAASUVORK5CYII="/>
+								</a>
+							</li>
+							<p><i>Free Wi-Fi</i></p>
+							
+						</div>
+							
+							
+						<div class="col">
+							<li class="three">
+								<a>
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAABAUlEQVR4nO3dQWoCQRBA0ZqcQ7xPcv8TqPcwixGCgruR+Zr3oLdFNR+G3s0MAAAAAADvb5mZ695L8Odr7wW4J0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIADAUz8zc5n131affM63u25q2XrgrIseXjC36Dwzxy0Hevb+A98zc5r9PymvPqfbXQEAAAAA4MEvnGN3w8zJ+QcAAAAASUVORK5CYII="/>
+								</a>
+							</li>
+							<p><i>Televisions</i></p>
+						</div>
+					</div>		
+				</ul>
+				
+			</div>
+		</div>
+		
+
+		<!-- == Footer =========================================================================== -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-10">
+						<h1> About </h1>
+						<p class="text-justify"> Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua.
+						</p>	
+					</div>
+
+					<div class="col-2">
+						<ul class="footer-links">
+						<h1>Quick Links</h1>
+						  <li><a href="">Home</a></li>
+						  <li><a href="">Hours</a></li>
+						  <li><a href="">Services</a></li>
+						  <li><a href="">About</a></li>
+						</ul>
+					</div>
+				</div>
+			
+				<hr>
+			
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p>Sparkle Coin Laundry</p>
+					</div>
+					
+					<div class="col">
+						<ul class="social-icons">
+						  <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						  <li><a class="instagram" href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+
+
+</html>
